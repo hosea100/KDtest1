@@ -33,3 +33,5 @@ const input3 = [-3, 4, 0, -2, 6, -1];
 console.log(findMaxumSuba(input1, 2));
 console.log(findMaxumSuba(input2, 4));
 console.log(findMaxumSuba(input3, 2)); 
+
+module.exports = findMaxumSuba;

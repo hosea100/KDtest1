@@ -82,3 +82,5 @@ const input3 = {
 console.log(getSumOfEvenNumbers(input1)); // 6
 console.log(getSumOfEvenNumbers(input2)); // 12
 console.log(getSumOfEvenNumbers(input3)); // 38
+
+module.exports = getSumOfEvenNumbers;

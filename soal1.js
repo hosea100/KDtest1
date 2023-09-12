@@ -29,3 +29,5 @@ function bobaSortDescending(inputArray) {
 const input = [1, 2, 4, 3, 5, 3, 2, 1];
 const sortedArray = bobaSortDescending(input);
 console.log(sortedArray);
+
+module.exports = bobaSortDescending;
