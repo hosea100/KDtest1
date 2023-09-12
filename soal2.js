@@ -16,8 +16,8 @@ function findMaxumSuba(array, length) {
 
   // iterate over the input given 
   for (let i = 0; i <= array.length - length; i++) {
-    const subarray = array.slice(i, i + length);
-    const sum = subarray.reduce((acc, curr) => acc + curr, 0);
+    const subarray = array.slice(i, i + length);    // slice the array to its respective subarray within the input range
+    const sum = subarray.reduce((acc, curr) => acc + curr, 0);    // find the maximum sum of subarray inside of array
     if (sum > maxum) {
       maxum = sum;
     }
@@ -30,6 +30,6 @@ const input1 = [100, 200, 300, 400];
 const input2 = [1, 4, 2, 10, 23, 3, 1, 0, 20];
 const input3 = [-3, 4, 0, -2, 6, -1];
 
-console.log(findMaxumSuba(input1, 2)); 
-console.log(findMaxumSuba(input2, 4)); 
+console.log(findMaxumSuba(input1, 2));
+console.log(findMaxumSuba(input2, 4));
 console.log(findMaxumSuba(input3, 2)); 
