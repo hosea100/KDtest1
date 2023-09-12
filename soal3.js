@@ -30,9 +30,9 @@ function getSumOfEvenNumbers(obj) {
   function traverse(obj) {
     for (let key in obj) {
       const value = obj[key];
-      if (typeof value === 'number' && value % 2 === 0) {
+      if (typeof value === 'number' && value % 2 === 0) {   // check if element is number
         sum += value;
-      } else if (typeof value === 'object') {
+      } else if (typeof value === 'object') {   // if object found callback
         traverse(value);
       }
     }
